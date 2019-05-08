@@ -1,0 +1,113 @@
+.education{
+    //background-color: $color-grey-light-1;
+    grid-column: 4 / 12;
+
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(7, 5vw);
+    grid-gap: 1.3rem;
+    //padding: 1.5rem;
+    margin-bottom: 15rem;
+    backface-visibility: hidden;
+
+    @media only screen and (max-width: $bp-small) {
+        margin-bottom: 10rem;
+        
+     }
+    @media only screen and (max-width: $bp-small) {
+        margin-bottom: 7rem;
+        
+     }
+
+    &__heading{
+        grid-column: 1 / -1;
+        justify-self: center;
+        
+       
+    }
+
+
+    &__item{
+        box-shadow: 0 2rem 5rem rgba(black, .2);
+        transition: all .2s;
+        backface-visibility: hidden;
+        
+     
+        &--1{
+            grid-row: 1 / span 2;
+            grid-column: 1 / span 2;
+        }
+        &--2{
+            grid-row: 1 / span 2;
+            grid-column: 3 / span 3;
+            //transform: translateY(2rem)
+        }
+        &--3{
+            grid-row:  1 / 4 ;
+            grid-column: 6 / 9;
+        }
+        &--4{
+            grid-row:  3 / 6 ;
+            grid-column: 1 / 4;
+        }
+        &--5{
+            grid-row:  3 / 4 ;
+            grid-column: 4 / 5;
+        }
+        &--6{
+            grid-row:  3 / 4 ;
+            grid-column: 5 / 6;
+        }
+        &--7{
+            grid-row:  6 / 8;
+            grid-column: 1 / 4;
+        }
+        &--8{
+            grid-row:  4 / 6 ;
+            grid-column: 7 / 9;
+        }
+        &--9{
+            grid-row:  7 / 8 ;
+            grid-column: 4 / 5;
+        }
+        &--10{
+            grid-row:  7 / 8 ;
+            grid-column: 5 / 6;
+        }
+
+        &--11{
+            grid-row:  4 / 7 ;
+            grid-column: 4 / 7;
+           
+        }
+        &--12{
+            grid-row:  6 / 8 ;
+            grid-column: 7 / 9;
+   
+        }
+        &--13{
+            grid-row:  7 / 8 ;
+            grid-column: 6 / 7;
+          
+        }
+
+        &:hover {
+            transform: scale(1.02);
+            box-shadow: 0 3rem 5rem rgba(black, .3);
+        }
+     
+    }
+    &__img{
+        width: 100%;
+        max-height: 100%;
+        display: block;
+        border-radius: 1px;
+        
+    }
+
+    &:hover &__item:not(:hover){
+        transform: scale(.99);
+        filter: brightness(98%)
+    }
+ 
+}

@@ -1,0 +1,97 @@
+// COLOR VARIABLES
+$color-primary: #4CB5F5;
+$color-primary-dark: #B28451;
+
+$color-secondary: #101d2c;
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #aaa;
+
+$color-grey-dark-1: #54483A;
+$color-grey-dark-2: #6D5D4B;
+
+//break-Points
+$bp-largest1: 101em; //1607px
+$bp-largest: 88em; //1407px
+$bp-large: 84em; //1300px
+
+
+$bp-medlarge: 75em; //1200px
+
+
+$bp-medium: 68em; //1081px
+$bp-medSmall: 56em; //889px
+$bp-MmSmall: 46em; // 735px
+$bp-small: 39em; //600px
+$bp-Xsmall: 25em; //400px
+
+
+
+
+
+// FONT VARIABLES
+$font-primary: 'Nunito', sans-serif;
+$font-display: 'Josefin Sans', sans-serif;
+
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5% ;
+    @media only screen and (max-width: $bp-Xsmall) {
+        font-size: 50%;
+        
+     }
+}
+
+body{
+    font-family: $font-primary;
+    color: $color-grey-dark-2;
+    font-weight: 300; 
+    line-height : 1.6;
+    //background-color: #B28451;
+  
+}
+
+.container {
+    display: grid;
+    grid-template-rows: min-content 70vh repeat(5, min-content) 60vh ;
+    grid-template-columns:   1fr repeat(12, minmax(min-content, 14.5rem)) 1fr ; 
+    justify-content: center;
+    @media only screen and (max-width: $bp-large) {
+        grid-template-rows: min-content 70vh repeat(5, min-content) 55vh ;
+         }
+    @media only screen and (max-width: $bp-medlarge) {
+        grid-template-rows: min-content 70vh repeat(5, min-content) 50vh ;
+         }
+    @media only screen and (max-width: $bp-medium) {
+        grid-template-rows: min-content 70vh repeat(5, min-content) 45vh ;
+         }
+
+    @media only screen and (max-width: $bp-medSmall) {
+                
+        grid-template-rows: 4rem 60vh repeat(5, min-content) 40vh;
+    }
+    @media only screen and (max-width: $bp-small) {
+        grid-template-rows:  55vh repeat(5, min-content) 30vh;    
+    }
+    @media only screen and (max-width: $bp-Xsmall) {
+        grid-template-rows:  40vh repeat(5, min-content) 25vh;    
+    }
+
+
+
+
+
+}
+
+.fade{
+    opacity: 1;
+}

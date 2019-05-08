@@ -1,0 +1,103 @@
+.header {
+    
+    grid-column: 1 / -1;
+    background-image: linear-gradient(rgba($color-primary, .93), rgba($color-primary, .93)), url(../img/damian-zaleski-843-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    //justify-content: center;
+    align-content: center;
+    margin-bottom: 5rem;
+    @media only screen and (max-width: $bp-large) {
+        grid-template-columns: 1fr auto 1fr;          
+    }
+    @media only screen and (max-width: $bp-medSmall) {
+                
+        grid-template-columns: 1fr max-content 1fr;  
+    }
+    @media only screen and (max-width: $bp-small) {
+        grid-template-rows: repeat(3, 1fr);  
+    }
+
+
+
+    &__name{
+        @media only screen and (max-width: $bp-medium) {
+                
+            display: none;
+        }
+    }
+
+    &__profile{
+        grid-column: 3 / -1;
+        grid-row: 1 / 1;
+        display: grid;
+        grid-template-columns: min-content minmax(min-content, max-content);
+        margin-top: -10rem;
+        grid-column-gap: 1rem;
+        justify-self: center;
+        align-items: center;
+        padding-left: 15rem;
+        
+        @media only screen and (max-width: $bp-medSmall) {
+            
+            margin-top: -6.5rem;
+            grid-template-columns: auto;
+            padding-left: 0;
+            
+        }
+        @media only screen and (max-width: $bp-small) {
+            margin-top: -1.5rem;    
+        }
+        
+    }
+
+    &__img{
+       
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+    }
+    &__maintext{
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+        justify-self: center;
+        align-self: flex-end;
+        padding: 1rem; 
+        @media only screen and (max-width: $bp-large) {
+            align-self: flex-end;
+               
+            
+        }
+        @media only screen and (max-width: $bp-medlarge) {
+        align-self: flex-end;
+           justify-self: normal; 
+           
+
+        }
+      
+    }
+    &__subtext{
+        grid-row: 3 / 4;
+        grid-column: 2 / 3;
+        justify-self: center;
+
+      @media only screen and (max-width: $bp-small) {
+            font-size: 1.5rem;  
+        }
+
+    }
+   
+}
+
+.email:link,
+.email:visited{
+    text-decoration: none;
+    color:$color-grey-dark-2;
+
+}
+.email:hover{
+    color: white;
+}

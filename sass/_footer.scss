@@ -1,0 +1,40 @@
+.footer{
+    background-color: $color-secondary;
+    grid-column: 1 / -1;
+    padding: 8rem;
+    
+}
+
+.nav {
+    list-style: none;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit,  1fr);
+ 
+
+ 
+   
+    &__link:link,
+    &__link:visited{
+        font-size: 1.4rem;
+        color: white;
+        text-decoration: none;
+        font-family: $font-display;
+      
+       // text-align: center;
+       display: grid;
+       justify-content: center;
+        
+    }
+}
+
+.copyright {
+    font-size: 1.4rem;
+    color: $color-grey-light-2;
+    margin-top: 6rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: -4rem;
+    text-align: center;
+    width: 70%;
+}

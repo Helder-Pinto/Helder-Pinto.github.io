@@ -1,0 +1,83 @@
+.tools{
+    grid-column: 1 / -1;
+
+    background-image: linear-gradient(rgba($color-primary, .93), rgba($color-primary, .93)), url(../img/oskar-yildiz-1429611-unsplash.jpg);
+    background-position: center; 
+    background-size: cover; 
+    display: grid;
+    padding-bottom: 5rem;
+    grid-row-gap: 2rem;
+    grid-template-columns: repeat(12, 1fr);
+
+    @media only screen and (max-width: $bp-medSmall) {
+                
+        grid-template-columns: repeat(6, 1fr);
+    }
+   
+    
+
+    @media only screen and (max-width: $bp-largest) {
+        padding-bottom: 0;
+        grid-row-gap: 0;
+         }
+   
+    &__container{
+        grid-column: 4/ 10;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        @media only screen and (max-width: $bp-medSmall) {
+                
+            grid-column: 1/ -1;
+        }
+        
+    }
+    &__heading{
+        grid-column: 1 / -1;
+        justify-self: center;
+        align-self: center;
+       
+        color: white;
+        
+
+    }
+  
+}
+
+
+.tool{
+    display: grid;
+   
+    
+    justify-items: center;
+    
+ 
+
+    &__icon{
+        width: 8rem;
+        height: 8rem;
+        @media only screen and (max-width: $bp-largest1) {
+            width: 7rem;
+            height: 7rem;
+             }
+
+        @media only screen and (max-width: $bp-largest) {
+        width: 6rem;
+        height: 6rem;
+         }
+        @media only screen and (max-width: $bp-medium) {
+        width: 5rem;
+        height: 5rem;
+         }
+         @media only screen and (max-width: $bp-medSmall) {
+                
+            width: 4rem;
+            height: 4rem;
+        }
+         @media only screen and (max-width: $bp-small) {
+                
+            width: 3.5rem;
+            height: 3.5rem;
+        }
+    }
+
+}

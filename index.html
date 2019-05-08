@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script type="text/javascript">
+            $(window).on("load",function() {
+            $(window).scroll(function() {
+                 var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+                 $(".fade").each(function() {
+                 /* Check the location of each desired element */
+                 var objectBottom = $(this).offset().top + $(this).outerHeight();
+                /* If the element is completely within bounds of the window, fade it in */
+                if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+                    if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+                } else { //object goes out of view (scrolling up)
+                    if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+                }
+                });
+            }).scroll(); //invoke scroll-handler on page-load
+            });
+        </script>
+        <title>Helder_Pinto</title>
+    </head>
+    <body class="container">
+        <nav class="navbar">
+            Portfolio
+        </nav>
+        <header class="header">
+                <div class="header__profile">
+                        <img src="img/IMG_1985 2.jpg" alt="" class="header__img">
+                        <a class="email "href = "mailto: hybridhp@hotmail.com"><h4 class="heading-4 header__name">Helder Pinto</h4></a>
+                        
+                </div>
+       <h1 class="heading-1 header__maintext">Hi,<br/>I'm Helder,<br/> Junior Developer.</h1>
+            
+            
+            <h3 class="heading-4 heading-4--dark header__subtext fade">Front-End Web Developer / iOS Mobile Developer</h3>
+        </header>
+        <section class="skills">
+            <h2 class="heading-2 heading-2--primary skills__heading fade">My Skills</h2>
+            <div class="skill fade">
+                <img src="img/SVG/004-python.svg" alt="" class="skill__icon">
+                <h4 class="heading-4 heading-4--dark">Python</h4>
+            </div>
+            <div class="skill fade">
+                    <img src="img/SVG/009-logo.svg" alt="" class="skill__icon">
+                <h4 class="heading-4 heading-4--dark">Html</h4>
+            </div>
+            <div class="skill fade">
+                    <img src="img/SVG/002-css.svg" alt="" class="skill__icon">
+                <h4 class="heading-4 heading-4--dark">Css</h4>
+            </div>
+            
+            <div class="skill fade">
+                    <img src="img/SVG/005-swift.svg" alt="" class="skill__icon">
+                <h4 class="heading-4 heading-4--dark">Swift</h4>
+            </div>
+            <div class="skill fade">
+                    <img src="img/SVG/001-javascript.svg" alt="" class="skill__icon">
+                <h4 class="heading-4 heading-4--dark">JavaScript</h4>
+            </div>
+            
+            
+            <div class="skill fade">
+                    <img src="img/SVG/008-sass.svg" alt="" class="skill__icon">
+                <h4 class="heading-4">Sass</h4>
+            </div>
+           
+        </section>
+        <h2 class="heading-2 heading-2--primary education__heading mb-hg  fade">Projects</h2>
+        <section class="projects">
+                
+            <div class="project project-1 ">
+                <video autoplay muted loop src="img/Videos/App1.mov" class="project__video">
+                </video>
+                <div class="project__links">
+                   
+                    <a href="https://github.com/Helder-Pinto/Movie-Trail.git" target="_blank" class="btn-2">&rarr;Source Code&larr;</a>
+                </div>     
+             
+        
+            </div>
+            <div class="project project-2 ">
+                <video autoplay muted loop src="img/Videos/App2.mov" class="project__video"></video>
+                <div class="project__links">
+                    
+                    <a href="https://github.com/Helder-Pinto/My-Shop.git" target="_blank" class="btn-2">&rarr;Source Code&larr;</a>
+                </div>   
+            </div>
+            <div class="project project-3 ">
+                <video autoplay muted loop src="img/Videos/Web1.mov" class="project__video"></video>
+                <div class="project__links">
+                    <a href="http://solacetours.epizy.com" target="_blank" class="btn-2">Visit Webpage</a>
+                    <a href="https://github.com/Helder-Pinto/SolaceTours-website.git" target="_blank" class="btn-2">&rarr;Source Code&larr;</a>
+                </div>   
+            </div>
+            <div class="project project-4 ">
+                <video autoplay muted loop src="img/Videos/Web2.mov"  class="project__video"></video>
+                <div class="project__links">
+                    <a href="http://galloreclothing.epizy.com" target="_blank" class="btn-2">Visit Webpage</a>
+                    <a href="https://github.com/Helder-Pinto/GalloreClothes-Website.git" target="_blank" class="btn-2">&rarr;Source Code&larr;</a>
+                </div>   
+            </div>
+        </section>
+        <h2 class="heading-2 heading-2--primary education__heading mb-hg  fade">Courses</h2>
+        <section class="education">
+           
+            <figure class="education__item education__item--1 fade">
+                <a href="https://www.udemy.com/understand-javascript/" target="_blank"><img src="img/js wierd parts.png" alt="" class="education__img"></a>
+                    
+            </figure>
+            <figure class="education__item education__item--2 fade">
+                <a href="https://www.concur.com" target="_blank"><img src="img/concur.png" alt="" class="education__img"></a>
+                    
+            </figure>
+            <figure class="education__item education__item--3 fade">
+                    <a href="https://www.udemy.com/the-web-developer-bootcamp/learn/v4/overview" target="_blank"> <img src="img/web dev colt.png" alt="" class="education__img"></a>
+                   
+            </figure>
+            <figure class="education__item education__item--4 fade">
+                    <a href="https://www.udemy.com/the-modern-python3-bootcamp/" target="_blank"><img src="img/mdern python colt.png" alt="" class="education__img"></a>
+                    
+            </figure>
+            <figure class="education__item education__item--5 fade">
+                    <a href="https://www.udemy.com/complete-python-3-masterclass-journey/" target="_blank"><img src="img/python master class.png" alt="" class="education__img"></a>
+                    
+            </figure>
+            <figure class="education__item education__item--6 fade">
+                    <a href="https://www.udemy.com/python-for-data-science-and-machine-learning-bootcamp/" target="_blank"><img src="img/python for data jose.png" alt="" class="education__img"></a>
+                    
+            </figure>
+            <figure class="education__item education__item--7 fade">
+                    <a href="https://www.udemy.com/datascience/" target="_blank"> <img src="img/data science a-z.png" alt="" class="education__img"></a>
+                   
+            </figure>
+            <figure class="education__item education__item--8 fade">
+                    <a href="https://www.udemy.com/the-ultimate-mysql-bootcamp-go-from-sql-beginner-to-expert/" target="_blank"><img src="img/mysql.png" alt="" class="education__img" ></a>
+                    
+            </figure>
+            <figure class="education__item education__item--9 fade">
+                    <a href="https://www.udemy.com/complete-ios-10-developer-course/" target="_blank"><img src="img/complete ios 11.png" alt="" class="education__img"></a>
+                    
+            </figure>
+            <figure class="education__item education__item--10 fade">
+                    <a href="https://www.udemy.com/the-complete-web-developer-course-2/" target="_blank"><img src="img/web dev 2.0.png" alt="" class="education__img"></a>
+                    
+            </figure>
+            <figure class="education__item education__item--11 fade">
+                    <a href="https://www.udemy.com/ios-12-app-development-bootcamp/" target="_blank"><img src="img/swift angela.png" alt="" class="education__img"></a>
+                    
+            </figure>
+            <figure class="education__item education__item--12 fade">
+                    <a href="https://www.udemy.com/js-algorithms-and-data-structures-masterclass/" target="_blank"> <img src="img/js cot.png" alt="" class="education__img"></a>
+                   
+            </figure>
+            <figure class="education__item education__item--13 fade">
+                    <a href="https://www.udemy.com/the-complete-javascript-course/" target="_blank"><img src="img/the complete javascript .png" alt="" class="education__img"></a>
+                    
+            </figure>
+           
+            
+        </section>
+        <section class="tools">
+            <div class="tools__container">
+                <h2 class="heading-2 heading-2--primary tools__heading  fade">Tools</h2>
+                <div class="tool fade">
+                    
+                        <img  class="tool__icon" src="img/logos/icons8-xcode.svg" alt="">
+                
+                </div>
+                <div class="tool  fade">
+                        <img  class="tool__icon" src="img/logos/visual-studio-code-seeklogo.com.svg" alt="">
+                </div>
+                <div class="tool  fade">
+                        <img  class="tool__icon" src="img/logos/atom_io-ar21.svg" alt="">
+                </div>
+                <div class="tool fade">
+                        <img  class="tool__icon" src="img/logos/brackets-seeklogo.com.svg" alt="">
+                </div>
+                <div class="tool fade">
+                        <img  class="tool__icon" src="img/logos/Jupyter_logo.svg" alt="">
+                    
+                </div>
+                <div class="tool fade">
+                        <img  class="tool__icon" src="img/logos/pycharm-seeklogo.com.svg" alt="">
+                </div>
+                <div class="tool fade">
+                        <img  class="tool__icon" src="img/logos/Unknown.svg" alt="">
+                </div>
+                <div class="tool fade">
+                        <img  class="tool__icon" src="img/logos/GitHub_Logo.png" alt="">
+                </div>
+                <div class="tool fade">
+                        <img  class="tool__icon" src="img/logos/popsql.png" alt="">
+                </div>
+                <div class="tool fade">
+                        <img  class="tool__icon" src="img/logos/tableau-logo.png" alt="">
+                </div>
+                <div class="tool fade">
+                        <img  class="tool__icon" src="img/logos/adobe-photoshop-cc-seeklogo.com.svg" alt="">
+                </div>
+                <div class="tool fade">
+                        <img  class="tool__icon" src="img/logos/final cut.png" alt="">
+                </div>
+            </div>
+            </section>
+        <footer class="footer">
+            <ul class="nav">
+                <li class="nva__item"><a href="mailto: hybridhp@hotmail.com" class="nav__link">Hybridhp@hotmail.com</a></li>
+                <li class="nva__item"><a href="mailto: hybridhp@hotmail.com" class="nav__link">+420604701011</a></li>
+                <li class="nva__item"><a href="mailto: hybridhp@hotmail.com" class="nav__link">Prage, Czech Republic</a></li>
+               
+              </ul>
+              <p class="copyright">
+                    Copyright 2019 &copy;  Helder Manuel Afonso Pinto
+                </p>
+        </footer>
+        
+    </body>
+</html>

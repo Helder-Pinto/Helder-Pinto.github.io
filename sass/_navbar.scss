@@ -1,0 +1,9 @@
+.navbar{
+    background-color: $color-secondary;
+    grid-column: 1 / -1;
+
+    padding: 2rem;  
+    @media only screen and (max-width: $bp-small) {
+        display: none;       
+    }
+}
